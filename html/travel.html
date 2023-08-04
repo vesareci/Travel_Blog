@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="../javascript/navbar.js"></script>
+
+<body>
+    <nav> 
+        <img src="../pictures/logo.png" alt="">
+        <ul>
+            <li><a class="active" href="../html/travel.html">Home</a></li>
+            <li><a href="../html/locations.html">Locations</a></li>
+            <li><a href="../html/about.html">About Us</a></li>
+            <li><a href="../html/packages.html">Tour packages</a></li>
+            <a href="../html/contact.html"><button class="contact-button" type="button">CONTACT</button></a>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <div class="hero">
+        <!-- <div class="image-cont">
+            <img src="pictures/banner.jpg" alt="">
+        </div> -->
+
+        <div class="content">
+            <p>WANT TO TRAVEL AROUND THE WORLD
+            <p>
+            <div class="input">
+                <form>
+                    <input type="text" name="time" class="input-field" placeholder="WHEN?">
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    <input type="text" name="place" class="input-field" placeholder="WHERE?">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom-icon">
+            <a href=""><i class="fa-solid fa-computer-mouse"></i></a>
+            <a class="scroll" href="#">Scroll down to see more</a>
+        </div>
+    </div> 
+
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 px-0">
+                <div class="destination">
+                    <div class="image-container">
+                        <img src="../pictures/home/maldives.jpg" alt="maldives" class="destination-img">
+                        <div class="price">
+                            <p>UP TO</p>
+                            <p class="bold">2000</p>
+                            <p>EURO/WEEK</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h5 class="small-title">TAKE YOUR TRIP TO</h5>
+                            <h1 class="big-title">MALDIVES</h1>
+                            <h6 class="description">A small archipelagic state in South Asia situated in the Indian
+                                Ocean. It lies southwest of Sri Lanka and India, about 700 kilometres (430 mi) from the
+                                Asian continent's mainland.</h6>
+                            <button class="book-now-button">Book Now</button>
+                        </div>
+                        <div class="information" id="maldives" onmouseover="showInformation()"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 px-0">
+                <div class="destination">
+                    <div class="image-container">
+                        <img src="../pictures/home/caraibbean.jpg" alt="caraibbean" class="destination-img">
+                        <div class="price">
+                            <p>UP TO</p>
+                            <p class="bold">2000</p>
+                            <p>EURO/WEEK</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h5 class="small-title">TAKE YOUR TRIP TO</h5>
+                            <h1 class="big-title">CARAIBBEAN</h1>
+                            <h6 class="description">A region of the Americas that consists of the Caribbean Sea, its
+                                islands, and the surrounding coasts. It is located southeast of the Gulf of Mexico and
+                                North America, east of Central America, and north of South America.</h6>
+                            <button class="book-now-button">Book Now</button>
+                        </div>
+                        <div class="information" id="caraibbean" onmouseover="showInformation()"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 px-0">
+                <div class="destination">
+                    <div class="image-container">
+                        <img src="../pictures/home/bora-bora.jpg" alt="bora-bora" class="destination-img">
+                        <div class="price">
+                            <p>UP TO</p>
+                            <p class="bold">2000</p>
+                            <p>EURO/WEEK</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h5 class="small-title">TAKE YOUR TRIP TO</h5>
+                            <h1 class="big-title">BORA BORA</h1>
+                            <h6 class="description">Bora Bora is an island group in the Leeward Islands. The Leeward
+                                Islands comprise the western part of the Society Islands of French Polynesia, which is
+                                an overseas collectivity of the French Republic in the Pacific Ocean. </h6>
+                            <button class="book-now-button">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 px-0">
+                <div class="destination">
+                    <div class="image-container">
+                        <img src="../pictures/home/santorini.jpg" alt="santorini" class="destination-img">
+                        <div class="price">
+                            <p>UP TO</p>
+                            <p class="bold">2000</p>
+                            <p>EURO/WEEK</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="title">
+                            <h5 class="small-title">TAKE YOUR TRIP TO</h5>
+                            <h1 class="big-title">SANTORINI</h1>
+                            <h6 class="description">A volcanic island in the Cyclades group of the Greek islands. It is
+                                famous for its dramatic views, stunning sunsets, white-washed buildings, and blue-domed
+                                churches.</h6>
+                            <button class="book-now-button">Book Now</button>
+                        </div>
+                        <div class="information" id="santorini" onmouseover="showInformation()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- about section -->
+    <section class="about-section">
+        <div class="about">
+            <h4>ABOUT US</h4>
+            <h2>Unlock Your Dream Destinations</h2>
+            <p>Welcome to our web page, a dedicated platform for all your travel packet needs.
+                We understand that planning a trip can be overwhelming,
+                and that's why we're here to simplify the process and make your travel experience seamless and
+                stress-free.
+                At our core, we believe that every journey starts with the perfect packet.
+                Whether you're a solo traveler, a family on vacation, or a group of friends seeking adventure,
+                we have carefully curated travel packets designed to cater to your specific needs and interests.
+            </p>
+
+            <div class="about-icons">
+                <a href=""> <i class="fa-solid fa-play"><span>Solo traveler</span></i></a>
+                <a href=""> <i class="fa-solid fa-play"><span>Family</span></i></a>
+                <a href=""> <i class="fa-solid fa-play"><span>Friends</span></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid custom-container px-0 mx-0">
+        <div class="message-s">
+            <div class="message-container-s">
+                <h6 class="small-title">LOCATIONS </h6>
+                <h1 class="big-title">
+                    Make these holidays as special as possible!
+                </h1>
+                <h2 class="description-s">
+                    Welcome to our travel agency, where adventure awaits at every turn! Explore the most captivating and
+                    enchanting destinations that the world has to offer. From breathtaking natural wonders to vibrant
+                    cultural hubs, we curate the perfect travel experiences to suit every wanderer's dreams.
+                </h2>
+                <div class="buttons-s">
+                    <div class="discover">
+                        <button type="button">
+                            <p>
+                                DISCOVER
+                            </p>
+                        </button>
+                    </div>
+                    <div class="arrows px-6">
+                        <i class="fas fa-chevron-left" style="color: #eceff4;"></i>
+                        <i class="fas fa-chevron-right" style="color: #eceff4;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="../pictures/home/foto-plazhi.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="container-fluid custom-container px-0 mx-0">
+        <div class="image">
+            <img src="../pictures/home/dubai.jpg" alt="">
+        </div>
+        <div class="message-s">
+            <div class="message-container-s">
+                <h6 class="small-title">TOUR PACKAGES </h6>
+                <h1 class="big-title">
+                    Make these holidays as special as possible!
+                </h1>
+                <h2 class="description-s">
+                    Our diverse range of tour packages caters to all types of travelers. From adrenaline-pumping
+                    escapades for the thrill-seekers to serene retreats for those seeking relaxation, we have it all.
+                    Unravel the mysteries of ancient civilizations, traverse breathtaking landscapes, and indulge in
+                    authentic culinary delights - each moment carefully curated to create lasting memories.
+                </h2>
+                <div class="buttons-s">
+                    <div class="discover px-6">
+                        <button type="button">
+                            <p>
+                                DISCOVER
+                            </p>
+                        </button>
+                    </div>
+                    <div class="arrows">
+                        <i class="fas fa-chevron-left" style="color: #eceff4;"></i>
+                        <i class="fas fa-chevron-right" style="color: #eceff4;"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h6 class="footer-title">ABOUT US</h6>
+                    <p>Welcome to our website! We are a dedicated team passionate
+                        about providing unforgettable travel experiences. Whether
+                        you're seeking adventure, relaxation, or cultural immersion
+                        , we have a wide range of destinations to suit every traveler
+                        's preference. Our mission is to make your journey memorable
+                        and hassle-free. Join us on an incredible adventure and create
+                        lifelong memories. Let's explore the world together!</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="navigate">
+                        <h6 class="footer-title">NAVIGATE</h6>
+                        <a class="footer-navigate">Locations</a>
+                        <a class="footer-navigate">About Us</a>
+                        <a class="footer-navigate">Tour Packages</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="dest">
+                        <h6 class="footer-title">DESTINATIONS</h6>
+                        <div class="horizontally">
+                            <div class="col-md-4 col1">
+                                <a class="footer-navigate">Maldives</a>
+                                <a class="footer-navigate">Caraibbean</a>
+                                <a class="footer-navigate">Bora Bora</a>
+                                <a class="footer-navigate">Santorini</a>
+                            </div>
+                            <div class="col-md-4 col1">
+                                <a class="footer-navigate">Mykonos</a>
+                                <a class="footer-navigate">Antalya</a>
+                                <a class="footer-navigate">Sarande</a>
+                                <a class="footer-navigate">Tahiti</a>
+                            </div>
+                            <div class="col-md-4 col1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="contact">
+                        <h6 class="footer-title">CONTACT US</h6>
+                        <p>Sheshi Nene Tereza</p>
+                        <p>Email: travel@gmail.com</p>
+                        <p>Phone: +355 68 123 2323</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fa-brands fa-facebook" style="color: #1b50ac;"></i></a>
+                            <a href="https://www.instagram.com/YourInstagramProfile" target="_blank"></a><i class="fa-brands fa-instagram" style="color: #f254a8;"></i></a>
+                            <a href="https://twitter.com/YourTwitterHandle" target="_blank"><i class="fa-brands fa-twitter" style="color: #6398f2;"></i></a>
+                            <a href="https://www.tiktok.com/@YourTikTokProfile" target="_blank"><i class="fa-brands fa-tiktok" style="color: #00040a;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

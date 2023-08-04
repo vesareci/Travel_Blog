@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="../javascript/navbar.js"></script>
+
+<body>
+    <nav> 
+        <img src="../pictures/logo.png" alt="">
+        <ul>
+            <li><a href="../html/travel.html">Home</a></li>
+            <li><a href="../html/locations.html">Locations</a></li>
+            <li><a href="../html/about.html">About Us</a></li>
+            <li><a href="../html/packages.html">Tour packages</a></li>
+            <a class="active" href="../html/contact.html"><button class="contact-button" type="button">CONTACT</button></a>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <div class="contact">
+            <div class="title">
+                <h2>Contact our travelers team</h2>
+            </div>
+    
+            <div class="box">
+                <!-- form box -->
+                <div class="contactUs form">
+                    <!-- <h3>Send a Message</h3> -->
+                    <form action="" onsubmit="event.preventDefault(); validateForm()">
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <!-- <span>First name</span> -->
+                                    <label for="name">First name</label>
+                                    <input type="text" id="name" placeholder="First name">
+                                    <small class="error"></small>
+                                </div>
+                                <div class="inputBox">
+                                    <!-- <span>Last name</span> -->
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" id="lastname" placeholder="Last name">
+                                    <small class="error"></small>
+                                </div>
+                            </div>
+    
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <!-- <span>Email</span> -->
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" placeholder="emailaddres@email.com">
+                                    <small class="error"></small>
+                                </div>
+                                <div class="inputBox">
+                                    <!-- <span>Mobile phone</span> -->
+                                    <label for="mobile-phone">Mobile Phone</label>
+                                    <input type="text" id="mobile-phone" placeholder="Mobile phone">
+                                    <small class="error"></small>
+                                </div>
+                            </div>
+    
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <!-- <span>Message</span> -->
+                                    <label for="message">Message</label>
+                                    <textarea id="message" placeholder="Write your message here..."></textarea>
+                                    <small class="error"></small>
+                                </div>
+                            </div>
+    
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input type="submit" value="Send Message">
+                                    <p class="error-flag" id="success"></p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- info box -->
+                <div class="contactUs info">
+                    <h3>Contact Info</h3>
+                    <div class="infoBox">
+                        <div>
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <a href="https://www.google.com/maps?q=Rruga+Gjergji+Filipi%2C+Tiran%C3%AB%2C+Albania" target="_blank">Location....</a>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="mailto:loremipsum@email.com" target="_blank">loremipsum@email.com</a>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-mobile"></i></span>
+                            <a href="telto:+012345678910" target="_blank">+0123 4567 8910</a>
+                        </div>
+
+                        <!-- social media links -->
+                        <ul class="sci">  
+                            <li><a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fa-brands fa-facebook" style="color: #1b50ac;"></i></a></li>
+                            <li><a href="https://www.instagram.com/YourInstagramProfile" target="_blank"><i class="fa-brands fa-instagram" style="color: #f254a8;"></i></a></li>
+                            <li><a href="https://twitter.com/YourTwitterHandle" target="_blank"><i class="fa-brands fa-twitter" style="color: #6398f2;"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@YourTikTokProfile" target="_blank"><i class="fa-brands fa-tiktok" style="color: #00040a;"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+    
+                <!-- map box -->
+                <div class="contactUs map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4991567856923!2d19.819416975427007!3d41.31975800018838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350311dab51d7b3%3A0xbce501ec047e53ef!2sRruga%20Gjergji%20Filipi%2C%20Tiran%C3%AB%2C%20Albania!5e0!3m2!1sen!2s!4v1689927867247!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="../javascript/script.js"></script>
+   
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <h6 class="footer-title">ABOUT US</h6>
+                        <p>Welcome to our website! We are a dedicated team passionate
+                            about providing unforgettable travel experiences. Whether
+                            you're seeking adventure, relaxation, or cultural immersion
+                            , we have a wide range of destinations to suit every traveler
+                            's preference. Our mission is to make your journey memorable
+                            and hassle-free. Join us on an incredible adventure and create
+                            lifelong memories. Let's explore the world together!</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="navigate">
+                            <h6 class="footer-title">NAVIGATE</h6>
+                            <a class="footer-navigate">Locations</a>
+                            <a class="footer-navigate">About Us</a>
+                            <a class="footer-navigate">Tour Packages</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="dest">
+                            <h6 class="footer-title">DESTINATIONS</h6>
+                            <div class="horizontally">
+                                <div class="col-md-4 col1">
+                                    <a class="footer-navigate">Maldives</a>
+                                    <a class="footer-navigate">Caraibbean</a>
+                                    <a class="footer-navigate">Bora Bora</a>
+                                    <a class="footer-navigate">Santorini</a>
+                                </div>
+                                <div class="col-md-4 col1">
+                                    <a class="footer-navigate">Mykonos</a>
+                                    <a class="footer-navigate">Antalya</a>
+                                    <a class="footer-navigate">Sarande</a>
+                                    <a class="footer-navigate">Tahiti</a>
+                                </div>
+                                <div class="col-md-4 col1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div>
+                            <h6 class="footer-title">CONTACT US</h6>
+                            <p>Sheshi Nene Tereza</p>
+                            <p>Email: travel@gmail.com</p>
+                            <p>Phone: +355 68 123 2323</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/YourFacebookPage" target="_blank"><i class="fa-brands fa-facebook" style="color: #1b50ac;"></i></a>
+                                <a href="https://www.instagram.com/YourInstagramProfile" target="_blank"></a><i class="fa-brands fa-instagram" style="color: #f254a8;"></i></a>
+                                <a href="https://twitter.com/YourTwitterHandle" target="_blank"><i class="fa-brands fa-twitter" style="color: #6398f2;"></i></a>
+                                <a href="https://www.tiktok.com/@YourTikTokProfile" target="_blank"><i class="fa-brands fa-tiktok" style="color: #00040a;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,482 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: Marcellus;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav img{
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 0;
+    height: 60px;
+    width: 400px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav li a{
+    color: blue;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 10px;
+}
+
+li a:hover{
+    border: 1px solid white;
+    transition: .3s;
+    background-color: rgb(62, 115, 248);
+    color: white;
+    border-radius: 10px;
+}
+
+nav button {
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(63, 193, 63);
+    margin-left: 20px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 15px;
+    transition: 0.4s;
+    text-decoration: none;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+nav button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+nav #icon{
+    color: blue;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 909px) {
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgb(239, 245, 247); */
+        background-color: rgba(239, 245, 247, 0.9); 
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li a{
+        font-size: 20px;
+    }
+    nav li{
+       display: block;
+       margin: 5px 0;
+       line-height: 80px; 
+       padding-top: 20px;
+    }
+    nav button{
+        margin-left: 0;
+    }
+    
+    .about button{
+        margin-left: 0;
+    }
+
+    nav ul.show{
+        left:0;
+    }
+}
+@media (max-width: 1048px) {
+    nav img{
+        padding-left: 8%;
+        padding-top: 2%;
+        padding-bottom: 0;
+        height: 60px;
+        width: 250px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 12px;
+    }
+}
+
+.contact {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    font-family: Maarcellus;
+
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+
+    background-color: rgb(240, 247, 252);
+}
+ .contact-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}  
+
+ .contact .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12%;
+}
+
+.contact .title h2{
+    color: blue;
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 0 2px 6px green
+}
+
+
+.form{
+   grid-area: form; 
+   border-radius: 5%;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+} 
+.contactUs{
+    padding: 40px;
+    padding-bottom: 0;
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    /* margin-right: 5%; */
+}
+
+.error{
+    color: red;
+    font-size: 10px;
+    font-family: arial;
+}
+.error-flag{
+    padding-top: 20px;
+    font-size: 17px;
+    color: rgb(17, 151, 17);
+    font-weight: bold;
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 2%;
+
+    background-color: rgb(79, 79, 237);
+    border-radius: 5%;
+} 
+
+
+
+/* form */
+ .formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 2%;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox input{
+    padding: 2%;
+    font-size: 15px;
+    outline: none;
+    /* border: none; */
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+}
+.inputBox input:focus{
+    border: 2px solid #18b7ff;
+}
+
+.inputBox label{
+    font-size: 18px;
+    color: rgb(51, 51, 241);
+}
+.inputBox textarea{
+    padding: 1%;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid black;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 1%;
+    border-radius: 5px;
+}
+.inputBox textarea:focus{
+    border-color:  #18b7ff;
+    border-width: 2px;
+}
+
+.inputBox input[type="submit"]{
+    background-color: rgb(59, 39, 241);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    max-width: 200px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 3%;
+    border: none;
+}
+.inputBox input[type="submit"]:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.inputBox::placeholder{
+    color: #999;
+} 
+
+/* contact info */
+ .info{
+    background: transparent;
+    border-radius: 8%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.info h3{
+    color: white;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 1%; */
+}
+.info .infoBox div span{
+    min-width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1 em;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+/* .info .infoBox div p{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 10px;
+} */
+.info .infoBox div a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 10px;
+} 
+
+.info .infoBox div span:hover,
+.info .infoBox div:hover,
+.info .infoBox div a:hover,
+.sci li:hover
+{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: white;
+    font-size: 2em;
+    color: #ccc;
+}
+.map{
+    padding: 0;
+    border-radius: 8%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+} 
+
+
+/* footer */
+footer{
+    padding: 100px 80px 100px 80px;
+    border-bottom: 20px solid rgb(34, 118, 171);
+    margin-bottom: 10px;
+}
+footer > a,p {
+    font-size: 12px;
+}
+footer > h6{
+    font-size: 14px;
+    /* font-weight: bold; */
+}
+.navigate{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.dest{
+    display: flex;
+    flex-direction: column;
+}
+.footer-title{
+    font-weight: bold;
+    font-size: smaller;
+}
+.footer-navigate{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.footer-navigate:hover{
+    text-decoration: underline;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+}
+.horizontally{
+    display: inline-flex;
+    margin: 0;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 991px){
+    body {
+        font-size: 14px; 
+      }
+      footer {
+        padding: 50px 90px;  
+      }
+    
+      .horizontally {
+        display: flex;
+        flex-direction: column; 
+        margin: 10px 0;
+      }
+
+    .contact{
+        padding: 20px;
+    }
+
+    .contact .title h2{
+        padding-top: 10%;
+    }
+
+    .box{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "form"
+    "info"
+    "map";
+    }
+
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .inputBox{
+        width: 100%;
+    }
+
+    .contact{
+        padding: 30px;
+    }
+    
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
+
+    .contactUs{
+        margin-right: 5%;
+    }
+
+    .inputBox input[type="submit"]{
+        max-width: 120px;
+    }
+
+    .navigate,
+    .dest,
+     .col1{
+        margin-left: 0px;
+    }
+
+    .navigate{
+    padding-bottom: 10px;
+    }
+
+}
+
+
+
+
